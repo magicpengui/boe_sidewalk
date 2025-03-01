@@ -23,7 +23,7 @@ function MapContainer(props) {
   /*LOADING COMPONENT SUCH AS API KEY*/
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "enter google maps api key here",
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
   });
   /**********************************/
 

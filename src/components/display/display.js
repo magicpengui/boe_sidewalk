@@ -9,7 +9,8 @@ import "./display.css";
 import { createSW } from "../utils/database";
 
 const accountName = "swbotblob";
-const sas ="enter sas key here";
+// npm install dotenv and create a .env file to store your token :)
+const sas = process.env.AZURE_SAS_TOKEN;
 
 const containerName = "csulaswproject";
 const imgPath = "2023-2024-data/images_3_29";
