@@ -41,7 +41,7 @@ const NavigateLA = (props) => {
     `https://${accountName}.blob.core.windows.net/${containerName}/${blobItem}?${sas}`
   );
 
-  // Function to handle fetching remote data (Azure) 
+  // Function to handle fetching remote data (Azure)
   const fetchHandler = () => {
     let blob = blobPath.concat("", index.toString()).concat("", extension);
     setBlobItem(blob);
