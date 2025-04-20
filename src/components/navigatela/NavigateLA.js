@@ -9,7 +9,7 @@ import JSZip from "jszip";
 import "./NavigateLA.css";
 
 const accountName = "swbotblob";
-const sas ="enter sas token here";
+const sas ="sv=2022-11-02&ss=bfqt&srt=c&sp=rwdlacupiytfx&se=2026-03-05T03:44:46Z&st=2025-03-04T19:00:00Z&spr=https&sig=mg9Y8V7PqTyjn8JVwhHCV5QstaTlVjn4kiAEKJR7OOk%3D";
 
 const containerName = "csulaswproject";
 const blobPaths = [
@@ -41,7 +41,8 @@ const NavigateLA = (props) => {
     `https://${accountName}.blob.core.windows.net/${containerName}/${blobItem}?${sas}`
   );
 
-  // Function to handle fetching remote data (Azure)
+  // Function to handle fetching remote data (Azure) https://swbotblob.blob.core.windows.net/csulaswproject?sv=2022-11-02&ss=bfqt&srt=c&sp=rwdlacupiytfx&se=2026-03-05T03:44:46Z&st=2025-03-04T19:00:00Z&spr=https&sig=mg9Y8V7PqTyjn8JVwhHCV5QstaTlVjn4kiAEKJR7OOk%3D
+
   const fetchHandler = () => {
     let blob = blobPath.concat("", index.toString()).concat("", extension);
     setBlobItem(blob);

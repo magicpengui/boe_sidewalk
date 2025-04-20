@@ -9,6 +9,8 @@ import Navi from './components/navbar/navi';
 import Display from './components/display/display';
 import Footer from './components/footer/footer';
 import NavigateLA from './components/navigatela/NavigateLA';
+import VerticalDisplacement from './components/verticaldisplacement/VerticalDisplacement';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -27,6 +29,10 @@ function App() {
     {
       path: "/navla",
       element: <NavigateLA/>,
+    },
+    {
+      path: "/vertical-displacement",
+      element: <VerticalDisplacement />
     },
   ]);
 
