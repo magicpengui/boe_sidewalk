@@ -147,11 +147,11 @@ const Display = (props) => {
               <thead>
                 <tr>
                   <th>Row #</th>
-                  <th>Section ID</th>
-                  <th>X-slope</th>
-                  <th>Y-slope</th>
-                  <th>Latitude</th>
-                  <th>Longitude</th>
+                  <th>Sidewalk ID</th>
+                  <th>Cross Slope (°)</th>
+                  <th>Running Slope (°)</th>
+                  <th>Latitude (°)</th>
+                  <th>Longitude (°)</th>
                   <th>Image</th>
                 </tr>
               </thead>
