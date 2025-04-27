@@ -86,17 +86,20 @@ function VerticalDisplacement() {
     setUploading(false);
   };
 
+
+  // html  
   return (
     <div className="max-w-xl mx-auto p-6 text-center">
       <h2 className="text-2xl font-semibold mb-6 text-gray-800">
-        Vertical Displacement Analyzer
+        Vertical Displacement Lite
       </h2>
-
+    <p>Upload .las files here!</p>
+    <p>The web version of the vertical displacement module has some limitations. If the lidar(.las) file is greater than 32MB, then please use the local version of this module.</p>
       {/* Upload Input */}
       <AnimatePresence>
         {!lidarResponse && (
           <motion.label
-            className="inline-block px-6 py-3 bg-blue-600 text-white rounded-xl cursor-pointer hover:bg-blue-700 transition shadow-lg"
+            className="inline-block px-6 py-3 bg-blue-600 text-black rounded-xl cursor-pointer hover:bg-blue-700 transition shadow-lg"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9 }}
