@@ -113,27 +113,24 @@ const About = (props) => {
               data-aos-duration="1000"
             >
               <section className="overview">
-                <h2 style={{ textAlign: "center" }}>2023-2024 Student Goals</h2>
+                <h2 style={{ textAlign: "center" }}>2024-2025 Student Goals</h2>
                 <p style={{ fontStyle: "italic" }}>
-                  This is the sixth term of a multi-year project. In the last
+                  This is the seventh term of a multi-year project. In the last
                   term, a rover has been successfully fabricated. Now, the
                   rover is capable of 1) moving with remote control, 2)
                   measuring crossing slopes and running slopes, 3) collecting
                   GPS data, and 4) taking photo images. In this term, we will
-                  develop a module to measure vertical and horizontal
-                  displacement by partnering with the Mechanical Department. In
-                  addition, we will continue developing various software by
-                  focusing on the following tasks:
+                  develop a module to measure vertical and develop a collision avoidance algorithm to enhance the safety features of the rover. 
                 </p>
                 <ol>
                   <li>
-                    Work with ME Department to implement a module to collect
+                    Work with ME, EE Department to implement a module to collect
                     vertical and horizontal displacement.
                     <ul>
                       <li>
                         Students shall implement a module to collect
-                        horizontal/vertical displacement on the sidewalk by
-                        equipping the rover with distance-measuring components.
+                        vertical displacement on the sidewalk by
+                        using an iPhone Pro Max or a liDAR scanner with pointcloud capabilities mounted to the rover.
                       </li>
                       <li>
                         Students shall develop a program to identify the severity
