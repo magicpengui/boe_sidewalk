@@ -65,8 +65,8 @@ function VerticalDisplacement() {
     for (const step of stepRequests) {
       try {
         const res = await axios.post(
-        //   "https://boe-backend-462517418748.us-west2.run.app" + step.url,
-        "http://127.0.0.1:8000" + step.url,
+          "https://boe-backend-462517418748.us-west2.run.app" + step.url,
+        // "http://127.0.0.1:8000" + step.url,
           step.data,
           {
             headers: {
